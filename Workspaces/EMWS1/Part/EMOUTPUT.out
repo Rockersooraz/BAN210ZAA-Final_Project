@@ -1,0 +1,82 @@
+*------------------------------------------------------------*
+User:                Nikee
+Date:                August 07, 2022
+Time:                18:16:28
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+INPUT      INTERVAL          1
+INPUT      NOMINAL           8
+TARGET     NOMINAL           1
+ 
+ 
+ 
+ 
+Partition Summary
+ 
+                                     Number of
+Type             Data Set          Observations
+ 
+DATA        EMWS1.FIMPORT_train         286
+TRAIN       EMWS1.Part_TRAIN            113
+VALIDATE    EMWS1.Part_VALIDATE          85
+TEST        EMWS1.Part_TEST              88
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Summary Statistics for Class Targets
+ 
+Data=DATA
+ 
+            Numeric                            Frequency
+Variable     Value       Formatted Value         Count      Percent    Label
+ 
+ class         .       no-recurrence-events       201       70.2797    class
+ class         .       recurrence-events           85       29.7203    class
+ 
+ 
+Data=TEST
+ 
+            Numeric                            Frequency
+Variable     Value       Formatted Value         Count      Percent    Label
+ 
+ class         .       no-recurrence-events        62       70.4545    class
+ class         .       recurrence-events           26       29.5455    class
+ 
+ 
+Data=TRAIN
+ 
+            Numeric                            Frequency
+Variable     Value       Formatted Value         Count      Percent    Label
+ 
+ class         .       no-recurrence-events        80       70.7965    class
+ class         .       recurrence-events           33       29.2035    class
+ 
+ 
+Data=VALIDATE
+ 
+            Numeric                            Frequency
+Variable     Value       Formatted Value         Count      Percent    Label
+ 
+ class         .       no-recurrence-events        59       69.4118    class
+ class         .       recurrence-events           26       30.5882    class

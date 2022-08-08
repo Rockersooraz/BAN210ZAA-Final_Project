@@ -1,0 +1,11 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Limits and Replacement Values for Interval Variables
+
+                                             Lower                     Upper
+                Replace         Lower     Replacement     Upper     Replacement
+Variable       Variable         limit        Value        Limit        Value
+
+deg_malig    REP_deg_malig    -0.23207      -0.23207     4.23207      4.23207  

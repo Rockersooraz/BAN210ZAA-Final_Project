@@ -1,0 +1,369 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Variable Summary
+
+            Measurement    Frequency
+Role           Level         Count
+
+INPUT        INTERVAL          1    
+INPUT        NOMINAL           8    
+REJECTED     INTERVAL          1    
+TARGET       NOMINAL           1    
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Model Events
+
+                                              Number
+                               Measurement      of
+Target          Event             Level       Levels      Order       Label
+
+class     RECURRENCE-EVENTS      NOMINAL         2      Descending    class
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Predicted and decision variables
+
+Type         Variable                       Label
+
+TARGET       class                          class                                
+PREDICTED    P_classrecurrence_events       Predicted: class=recurrence-events   
+RESIDUAL     R_classrecurrence_events       Residual: class=recurrence-events    
+PREDICTED    P_classno_recurrence_events    Predicted: class=no-recurrence-events
+RESIDUAL     R_classno_recurrence_events    Residual: class=no-recurrence-events 
+FROM         F_class                        From: class                          
+INTO         I_class                        Into: class                          
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+The NEURAL Procedure
+
+Preliminary       Starting         Objective         Number
+ Training          Random           Function           of        Terminating
+    Run             Seed             Value         Iterations     Criteria
+
+        1               12345    0.158357286208           10                
+        2           600222438    0.103389788585           10                
+        3            60270049    0.243092994118           10                
+        4          1489754846    0.140196524695           10                
+        5            75976549    0.094968581106           10                
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+The NEURAL Procedure
+
+                      Optimization Start
+                      Parameter Estimates
+                                                      Gradient
+                                                     Objective
+  N Parameter                         Estimate        Function
+
+  1 REP_deg_malig_H11                 1.277320       -0.050092
+  2 REP_deg_malig_H12                 0.770773       -0.000110
+  3 REP_deg_malig_H13                 0.968560        0.058705
+  4 age3039_H11                      -1.890529        0.001013
+  5 age4049_H11                       1.191919        0.020774
+  6 age5059_H11                      -0.591304       -0.030868
+  7 age6069_H11                       0.308516       -0.002083
+  8 breastleft_H11                    0.579149        0.033305
+  9 breast_quad__H11                  1.377025        0.019261
+ 10 breast_quadcentral_H11            0.229000        0.024735
+ 11 breast_quadleft_low_H11          -0.723902        0.022084
+ 12 breast_quadleft_up_H11           -1.044717        0.048692
+ 13 breast_quadright_low_H11         -0.201100        0.024964
+ 14 inv_nodes02_H11                  -1.227446        0.017677
+ 15 inv_nodes1517_H11                 0.023669       -0.000264
+ 16 inv_nodes2426_H11                 0.715196    -0.000061667
+ 17 inv_nodes44625_H11                0.859308       -0.026069
+ 18 inv_nodes44720_H11                0.782813       -0.002813
+ 19 irradiatno_H11                   -0.498919       -0.060921
+ 20 menopausege40_H11                -0.003673       -0.066941
+ 21 menopauselt40_H11                 0.481213       -0.027882
+ 22 node_caps__H11                   -0.207432        0.019959
+ 23 node_capsno_H11                   0.354941        0.028622
+ 24 tumor_size04_H11                 -0.043640     0.000002634
+ 25 tumor_size1519_H11                0.058147       -0.000539
+ 26 tumor_size2024_H11               -0.128450       -0.026404
+ 27 tumor_size2529_H11                1.568852        0.029649
+ 28 tumor_size3034_H11                0.208397       -0.012628
+ 29 tumor_size3539_H11               -0.988156        0.000485
+ 30 tumor_size4044_H11               -0.019095       -0.001756
+ 31 tumor_size44690_H11              -0.330875     0.000005041
+ 32 tumor_size44848_H11              -0.284254     0.000000454
+ 33 tumor_size4549_H11               -0.826172     0.000020787
+ 34 age3039_H12                       0.064175       -0.008286
+ 35 age4049_H12                      -0.571241       -0.014456
+ 36 age5059_H12                      -0.351375        0.018540
+ 37 age6069_H12                      -0.077051       -0.020354
+ 38 breastleft_H12                   -0.111491        0.030921
+ 39 breast_quad__H12                 -1.245153       -0.019981
+ 40 breast_quadcentral_H12           -0.597457       -0.019384
+ 41 breast_quadleft_low_H12          -0.787914       -0.044936
+ 42 breast_quadleft_up_H12           -0.072537       -0.040183
+ 43 breast_quadright_low_H12          1.050976       -0.020109
+ 44 inv_nodes02_H12                   0.972271       -0.041799
+ 45 inv_nodes1517_H12                -1.496778        0.000702
+ 46 inv_nodes2426_H12                -0.567183        0.000274
+ 47 inv_nodes44625_H12                1.356781        0.017117
+ 48 inv_nodes44720_H12               -0.371124        0.000736
+ 49 irradiatno_H12                   -0.719293        0.008043
+ 50 menopausege40_H12                -0.752176        0.023465
+ 51 menopauselt40_H12                 0.091975        0.023940
+ 52 node_caps__H12                    1.825526       -0.008426
+ 53 node_capsno_H12                   0.079106       -0.041272
+ 54 tumor_size04_H12                  1.067505    -0.000087306
+ 55 tumor_size1519_H12               -0.241941       -0.014290
+ 56 tumor_size2024_H12                0.063531        0.010210
+ 57 tumor_size2529_H12               -0.444950        0.000232
+ 58 tumor_size3034_H12               -2.824314        0.001788
+ 59 tumor_size3539_H12               -0.219070       -0.007696
+ 60 tumor_size4044_H12                0.405113       -0.013649
+ 61 tumor_size44690_H12               0.487310       -0.000757
+ 62 tumor_size44848_H12               1.127436       -0.000508
+ 63 tumor_size4549_H12                0.429975    -0.000078976
+ 64 age3039_H13                      -0.235157       -0.000570
+ 65 age4049_H13                       1.039984       -0.010065
+ 66 age5059_H13                      -1.166827       -0.028591
+ 67 age6069_H13                       0.727533       -0.002501
+ 68 breastleft_H13                   -2.070801        0.023862
+ 69 breast_quad__H13                  0.316266        0.003882
+ 70 breast_quadcentral_H13            0.652456        0.003611
+ 71 breast_quadleft_low_H13          -1.274254       -0.003996
+ 72 breast_quadleft_up_H13           -1.024583       -0.025684
+ 73 breast_quadright_low_H13          0.633510        0.003816
+ 74 inv_nodes02_H13                  -0.754851       -0.037167
+ 75 inv_nodes1517_H13                 0.420004       -0.000381
+ 76 inv_nodes2426_H13                 0.293169     0.000037244
+ 77 inv_nodes44625_H13                0.352505       -0.003951
+ 78 inv_nodes44720_H13               -0.423258     0.000019679
+ 79 irradiatno_H13                   -1.400317       -0.022346
+ 80 menopausege40_H13                -1.451319        0.031751
+ 81 menopauselt40_H13                -1.159428        0.036771
+ 82 node_caps__H13                   -0.161320        0.003709
+ 83 node_capsno_H13                   1.315909       -0.034342
+ 84 tumor_size04_H13                 -0.603591     0.000006677
+ 85 tumor_size1519_H13               -0.447014        0.002121
+ 86 tumor_size2024_H13                1.649154       -0.008842
+ 87 tumor_size2529_H13               -0.722333       -0.024814
+ 88 tumor_size3034_H13               -1.410513       -0.010057
+ 89 tumor_size3539_H13                0.059464        0.000129
+ 90 tumor_size4044_H13                1.730095       -0.000826
+ 91 tumor_size44690_H13              -0.407072        0.000299
+ 92 tumor_size44848_H13              -0.745296        0.000294
+ 93 tumor_size4549_H13               -0.351339     0.000008265
+ 94 BIAS_H11                         -1.542510       -0.011165
+ 95 BIAS_H12                          0.213767       -0.024614
+ 96 BIAS_H13                          0.697374       -0.041679
+ 97 H11_classrecurrenceevents         5.222990       -0.003815
+ 98 H12_classrecurrenceevents        -5.008396        0.011692
+ 99 H13_classrecurrenceevents         5.071630        0.004375
+100 BIAS_classrecurrenceevents       -0.024597       -0.001145
+
+Value of Objective Function = 0.0949685811
+
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+The NEURAL Procedure
+
+Levenberg-Marquardt Optimization
+
+
+Minimum Iterations                                0
+Maximum Iterations                               50
+Maximum Function Calls                   2147483647
+Maximum CPU Time                              14400
+ABSGCONV Gradient Criterion                 0.00001
+GCONV Gradient Criterion                       1E-8
+GCONV2 Gradient Criterion                         0
+ABSFCONV Function Criterion                       0
+FCONV Function Criterion                     0.0001
+FCONV2 Function Criterion                         0
+FSIZE Parameter                                   0
+ABSXCONV Parameter Change Criterion               0
+XCONV Parameter Change Criterion                  0
+XSIZE Parameter                                   0
+ABSCONV Function Criterion             0.0015762414
+Trust Region Initial Radius Factor                1
+Singularity Tolerance (SINGULAR)               1E-8
+
+Levenberg-Marquardt Optimization
+
+Scaling Update of More (1978)
+
+Parameter Estimates             100
+
+                                             Optimization Start
+
+Active Constraints                                  0  Objective Function                       0.0949685811
+Max Abs Gradient Element                 0.0669406431  Radius                                              1
+
+
+                                                                                                         Ratio
+                                                                                                       Between
+                                                                                                        Actual
+                                                                 Objective     Max Abs                     and
+                     Function         Active        Objective     Function    Gradient               Predicted
+Iter     Restarts       Calls    Constraints         Function       Change     Element     Lambda       Change
+
+   1*           0           7              0          0.09270      0.00227      0.0657      193.6        0.994
+   2*           0           8              0          0.09131      0.00138      0.0644     32.100        0.997
+   3*           0           9              0          0.08875      0.00256      0.0617     15.890        0.993
+   4*           0          10              0          0.08406      0.00470      0.0561      7.186        0.982
+   5*           0          11              0          0.07608      0.00798      0.0431      2.728        0.947
+   6*           0          15              0          0.07047      0.00561      0.0656    0.00938        0.138
+   7*           0          18              0          0.04694       0.0235      0.0525    0.00805        0.629
+   8*           0          20              0          0.03783      0.00911      0.0588    0.00172        0.318
+   9*           0          22              0          0.02118       0.0167     0.00841    0.00370        0.836
+  10*           0          24              0          0.01351      0.00767      0.0145    7.36E-7        0.861
+  11*           0          25              0          0.01278     0.000730     0.00371    868E-12        0.555
+  12*           0          27              0          0.01243     0.000352     0.00688    0.00005        0.759
+  13*           0          28              0          0.01231     0.000120     0.00270    7.66E-6        0.769
+  14*           0          29              0          0.01227     0.000033     0.00121    282E-13        0.840
+  15*           0          31              0          0.01227     2.588E-6    0.000573    2.09E-6        0.767
+  16*           0          33              0          0.01227     3.283E-7    0.000310    0.00001        0.684
+  17*           0          34              0          0.01227     5.145E-8    0.000706    8.76E-6        0.197
+  18*           0          35              0          0.01227     2.933E-7    0.000096    7.62E-6        0.720
+  19*           0          38              0          0.01227     2.433E-8    0.000142    0.00017        0.607
+  20*           0          39              0          0.01227     2.065E-8    0.000036    0.00008        0.847
+  21*           0          40              0          0.01227     2.685E-8    0.000017    0.00004        0.979
+  22*           0          41              0          0.01227     5.178E-8    0.000014    0.00002        0.987
+  23*           0          42              0          0.01227     1.013E-7    0.000036    8.47E-6        0.977
+  24*           0          43              0          0.01227     2.128E-7    0.000353    2.64E-6        0.813
+  25*           0          44              0          0.01227     3.053E-7    0.000619    9.78E-7        0.663
+
+                                            Optimization Results
+
+Iterations                                         25  Function Calls                                     46
+Jacobian Calls                                     27  Active Constraints                                  0
+Objective Function                       0.0122690724  Max Abs Gradient Element                 0.0006188388
+Lambda                                   9.7800677E-7  Actual Over Pred Change                   0.662547287
+Radius                                   0.6133568427                                                       
+
+Convergence criterion (FCONV=0.0001) satisfied.                                                   
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+The NEURAL Procedure
+
+                     Optimization Results
+                      Parameter Estimates
+                                                      Gradient
+                                                     Objective
+  N Parameter                         Estimate        Function
+
+  1 REP_deg_malig_H11                 3.027517        0.000619
+  2 REP_deg_malig_H12                 2.609150    -0.000076025
+  3 REP_deg_malig_H13                 1.780044    -5.779688E-9
+  4 age3039_H11                      -3.780318    9.0667145E-9
+  5 age4049_H11                       1.689061        0.000460
+  6 age5059_H11                      -0.749895    1.1233838E-8
+  7 age6069_H11                       0.577663    -6.976676E-9
+  8 breastleft_H11                    1.645302       -0.000460
+  9 breast_quad__H11                  2.087108       -0.000460
+ 10 breast_quadcentral_H11            0.370061       -0.000460
+ 11 breast_quadleft_low_H11          -2.562173       -0.000460
+ 12 breast_quadleft_up_H11           -2.518331       -0.000460
+ 13 breast_quadright_low_H11          0.388144       -0.000460
+ 14 inv_nodes02_H11                  -2.631561        0.000460
+ 15 inv_nodes1517_H11                 0.903038    -2.82762E-10
+ 16 inv_nodes2426_H11                 1.182858    -1.837697E-9
+ 17 inv_nodes44625_H11                1.908612    -2.903403E-8
+ 18 inv_nodes44720_H11                1.553396    9.9781345E-9
+ 19 irradiatno_H11                   -0.684043        0.000460
+ 20 menopausege40_H11                -0.011278       -0.000460
+ 21 menopauselt40_H11                 1.070300       -0.000460
+ 22 node_caps__H11                    0.212141    -2.176533E-9
+ 23 node_capsno_H11                   0.710495        0.000460
+ 24 tumor_size04_H11                 -0.269721    -3.13689E-13
+ 25 tumor_size1519_H11                1.463500    -1.681937E-8
+ 26 tumor_size2024_H11               -0.762206    1.3469214E-8
+ 27 tumor_size2529_H11                2.468157    5.9987209E-9
+ 28 tumor_size3034_H11                0.138542        0.000460
+ 29 tumor_size3539_H11               -2.138326    1.3177578E-8
+ 30 tumor_size4044_H11               -1.759842    1.6059409E-8
+ 31 tumor_size44690_H11              -0.774710    -5.41557E-13
+ 32 tumor_size44848_H11              -1.692832    -5.03426E-13
+ 33 tumor_size4549_H11               -0.869145    4.970132E-12
+ 34 age3039_H12                      -0.237339    -9.413173E-9
+ 35 age4049_H12                      -2.985093    -0.000056535
+ 36 age5059_H12                      -1.398902    8.1923596E-9
+ 37 age6069_H12                      -0.328441     -1.78064E-8
+ 38 breastleft_H12                   -1.845129     0.000056599
+ 39 breast_quad__H12                 -1.397501     0.000056551
+ 40 breast_quadcentral_H12           -2.574880     0.000056572
+ 41 breast_quadleft_low_H12          -3.180750     0.000056575
+ 42 breast_quadleft_up_H12           -0.864279     0.000056548
+ 43 breast_quadright_low_H12          4.975389     0.000056506
+ 44 inv_nodes02_H12                   2.693612    -0.000056610
+ 45 inv_nodes1517_H12                -3.646431    1.1542041E-8
+ 46 inv_nodes2426_H12                -0.462613    -5.069878E-9
+ 47 inv_nodes44625_H12                2.126485    2.2852104E-8
+ 48 inv_nodes44720_H12               -0.686387    -4.360041E-9
+ 49 irradiatno_H12                   -2.158414    -0.000056519
+ 50 menopausege40_H12                -3.008455     0.000056617
+ 51 menopauselt40_H12                -0.217472     0.000056586
+ 52 node_caps__H12                    3.650878    -7.575502E-8
+ 53 node_capsno_H12                   1.449458    -0.000056593
+ 54 tumor_size04_H12                  2.821796    1.5368303E-9
+ 55 tumor_size1519_H12               -1.167514    6.3190627E-9
+ 56 tumor_size2024_H12                1.822162    -4.789105E-8
+ 57 tumor_size2529_H12               -2.321146    1.7812982E-8
+ 58 tumor_size3034_H12               -8.628377    -0.000056438
+ 59 tumor_size3539_H12               -0.677162    1.2223931E-8
+ 60 tumor_size4044_H12                1.678183    -2.863383E-8
+ 61 tumor_size44690_H12               3.492625    -5.634579E-8
+ 62 tumor_size44848_H12               2.649051    -3.32354E-10
+ 63 tumor_size4549_H12                0.478923    -4.128574E-9
+ 64 age3039_H13                      -0.046105    -1.188193E-8
+ 65 age4049_H13                       1.990702    2.6020541E-8
+ 66 age5059_H13                      -0.831966    9.4411798E-9
+ 67 age6069_H13                       2.837378    -1.759987E-8
+ 68 breastleft_H13                   -4.285761    1.7238138E-8
+ 69 breast_quad__H13                  0.455251    4.1366046E-9
+ 70 breast_quadcentral_H13            3.046332    -2.097264E-9
+ 71 breast_quadleft_low_H13          -2.773076     2.195428E-8
+ 72 breast_quadleft_up_H13           -2.025253    6.2723465E-9
+ 73 breast_quadright_low_H13          1.236607     4.307342E-9
+ 74 inv_nodes02_H13                  -0.292288    -1.338614E-8
+ 75 inv_nodes1517_H13                -0.564380    -7.31539E-10
+ 76 inv_nodes2426_H13                -0.154273    2.749071E-11
+ 77 inv_nodes44625_H13               -0.028717    2.3433892E-8
+ 78 inv_nodes44720_H13               -0.744472    4.264435E-10
+ 79 irradiatno_H13                   -3.144594    4.2422168E-8
+ 80 menopausege40_H13                -3.245262    4.3971211E-8
+ 81 menopauselt40_H13                -3.141821    1.8171742E-8
+ 82 node_caps__H13                   -0.760342    3.3603481E-8
+ 83 node_capsno_H13                   2.140091    -3.825439E-8
+ 84 tumor_size04_H13                 -2.849474    5.322983E-10
+ 85 tumor_size1519_H13               -2.442455    4.0995343E-9
+ 86 tumor_size2024_H13                2.778751    -4.045221E-8
+ 87 tumor_size2529_H13               -2.774672    1.2372419E-8
+ 88 tumor_size3034_H13               -2.589559    1.6540314E-8
+ 89 tumor_size3539_H13               -0.487175     1.556972E-9
+ 90 tumor_size4044_H13               10.265780    1.3658968E-8
+ 91 tumor_size44690_H13              -0.679330    3.962747E-10
+ 92 tumor_size44848_H13              -0.880655     3.96339E-10
+ 93 tumor_size4549_H13               -0.208798    -6.48747E-11
+ 94 BIAS_H11                         -2.823591        0.000460
+ 95 BIAS_H12                         -0.262529    -0.000056555
+ 96 BIAS_H13                          0.485221      9.75362E-9
+ 97 H11_classrecurrenceevents        14.863888    -0.000000262
+ 98 H12_classrecurrenceevents       -15.405461     0.000029354
+ 99 H13_classrecurrenceevents        15.068520     0.000030706
+100 BIAS_classrecurrenceevents       -0.580985     0.000031017
+
+Value of Objective Function = 0.0122690724
+

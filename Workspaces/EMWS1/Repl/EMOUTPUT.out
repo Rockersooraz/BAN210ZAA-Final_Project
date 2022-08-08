@@ -1,0 +1,49 @@
+*------------------------------------------------------------*
+User:                Nikee
+Date:                August 07, 2022
+Time:                18:16:35
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+INPUT      INTERVAL          1
+INPUT      NOMINAL           8
+TARGET     NOMINAL           1
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Limits and Replacement Values for Interval Variables
+ 
+                                             Lower                     Upper
+                Replace         Lower     Replacement     Upper     Replacement
+Variable       Variable         limit        Value        Limit        Value
+ 
+deg_malig    REP_deg_malig    -0.23207      -0.23207     4.23207      4.23207
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Replacement Counts
+ 
+Obs    Variable       Label      Role     Train    Validation    Test
+ 
+ 1     deg_malig    deg-malig    INPUT      0           0          0

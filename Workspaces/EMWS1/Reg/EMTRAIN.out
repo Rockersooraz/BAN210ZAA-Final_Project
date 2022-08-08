@@ -1,0 +1,216 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Variable Summary
+
+            Measurement    Frequency
+Role           Level         Count
+
+INPUT        INTERVAL          1    
+INPUT        NOMINAL           8    
+REJECTED     INTERVAL          1    
+TARGET       NOMINAL           1    
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Model Events
+
+                                              Number
+                               Measurement      of
+Target          Event             Level       Levels      Order       Label
+
+class     RECURRENCE-EVENTS      NOMINAL         2      Descending    class
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Predicted and decision variables
+
+Type         Variable                       Label
+
+TARGET       class                          class                                
+PREDICTED    P_classrecurrence_events       Predicted: class=recurrence-events   
+RESIDUAL     R_classrecurrence_events       Residual: class=recurrence-events    
+PREDICTED    P_classno_recurrence_events    Predicted: class=no-recurrence-events
+RESIDUAL     R_classno_recurrence_events    Residual: class=no-recurrence-events 
+FROM         F_class                        From: class                          
+INTO         I_class                        Into: class                          
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+The DMREG Procedure
+
+                Model Information
+
+Training Data Set              WORK.EM_DMREG.VIEW
+DMDB Catalog                   WORK.REG_DMDB     
+Target Variable                class (class)     
+Target Measurement Level       Nominal           
+Number of Target Categories    2                 
+Error                          MBernoulli        
+Link Function                  Logit             
+Number of Model Parameters     32                
+Number of Observations         113               
+
+
+                 Target Profile
+ 
+ Ordered                                  Total
+   Value     class                    Frequency
+
+       1     recurrence-events               33
+       2     no-recurrence-events            80
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+The DMREG Procedure
+
+Newton-Raphson Ridge Optimization
+
+Without Parameter Scaling
+
+Parameter Estimates              32
+
+                                             Optimization Start
+
+Active Constraints                                  0  Objective Function                       68.247943212
+Max Abs Gradient Element                           12                                                       
+
+
+                                                                                                        Ratio
+                                                                                                      Between
+                                                                                                       Actual
+                                                                 Objective     Max Abs                    and
+                     Function         Active        Objective     Function    Gradient              Predicted
+Iter     Restarts       Calls    Constraints         Function       Change     Element     Ridge       Change
+
+   1            0           2              0         50.61625      17.6317      4.1492         0        1.057
+   2            0           3              0         48.29798       2.3183      0.9170         0        1.212
+   3            0           4              0         47.69663       0.6013      0.2689         0        1.240
+   4            0           5              0         47.50182       0.1948      0.0953         0        1.260
+   5            0           6              0         47.43201       0.0698      0.0350         0        1.263
+   6            0           7              0         47.40653       0.0255      0.0129         0        1.264
+   7            0           8              0         47.39718      0.00935     0.00474         0        1.264
+   8            0           9              0         47.39374      0.00344     0.00174         0        1.264
+   9            0          10              0         47.39248      0.00126    0.000641         0        1.264
+  10            0          11              0         47.39202     0.000465    0.000236         0        1.264
+  11            0          12              0         47.39184     0.000171    0.000087         0        1.264
+  12            0          13              0         47.39178     0.000063    0.000032         0        1.264
+  13            0          14              0         47.39176     0.000023    0.000012         0        1.264
+
+                                            Optimization Results
+
+Iterations                                         13  Function Calls                                     16
+Hessian Calls                                      14  Active Constraints                                  0
+Objective Function                       47.391758532  Max Abs Gradient Element                 0.0000117452
+Ridge                                               0  Actual Over Pred Change                   1.264240764
+
+Convergence criterion (GCONV=1E-6) satisfied.                                                     
+
+
+     Likelihood Ratio Test for Global Null Hypothesis: BETA=0
+ 
+     -2 Log Likelihood          Likelihood
+  Intercept     Intercept &          Ratio
+       Only      Covariates     Chi-Square       DF     Pr > ChiSq
+
+    136.496          94.784        41.7124       31         0.0948
+
+
+           Type 3 Analysis of Effects
+ 
+                               Wald
+Effect             DF    Chi-Square    Pr > ChiSq
+
+REP_deg_malig       1        3.2051        0.0734
+age                 4        7.2688        0.1223
+breast              1        2.3670        0.1239
+breast_quad         4      292.2536        <.0001
+inv_nodes           5        5.1480        0.3981
+irradiat            1        0.0226        0.8805
+menopause           1       71.6758        <.0001
+node_caps           1      136.2933        <.0001
+tumor_size         10        2.0857        0.9956
+
+
+                                              Analysis of Maximum Likelihood Estimates
+ 
+                                                                     Standard          Wald                  Standardized
+Parameter                  class                   DF    Estimate       Error    Chi-Square    Pr > ChiSq        Estimate    Exp(Est)
+
+Intercept                  recurrence-events        1    -12.2948       420.9          0.00        0.9767                       0.000
+REP_deg_malig              recurrence-events        1      0.7419      0.4144          3.21        0.0734          0.3043       2.100
+age           30-39        recurrence-events        1      1.2712       274.8          0.00        0.9963                       3.565
+age           40-49        recurrence-events        1      3.5112       274.8          0.00        0.9898                      33.488
+age           50-59        recurrence-events        1      1.7702       274.8          0.00        0.9949                       5.872
+age           60-69        recurrence-events        1      3.2443       274.8          0.00        0.9906                      25.644
+breast        left         recurrence-events        1     -0.5536      0.3598          2.37        0.1239                       0.575
+breast_quad   ?            recurrence-events        1     13.7361           .           .           .                   .     999.000
+breast_quad   central      recurrence-events        1     -1.3466      0.9524          2.00        0.1574                       0.260
+breast_quad   left_low     recurrence-events        1     -2.8702      0.5230         30.12        <.0001                       0.057
+breast_quad   left_up      recurrence-events        1     -3.6053      0.5633         40.97        <.0001                       0.027
+breast_quad   right_low    recurrence-events        1     -2.0246      1.0659          3.61        0.0575                       0.132
+inv_nodes     0-2          recurrence-events        1     -3.9300       254.2          0.00        0.9877                       0.020
+inv_nodes     15-17        recurrence-events        1     -1.8558       254.2          0.00        0.9942                       0.156
+inv_nodes     24-26        recurrence-events        1     11.4860      1271.0          0.00        0.9928                     999.000
+inv_nodes     44625        recurrence-events        1     -2.4014       254.2          0.00        0.9925                       0.091
+inv_nodes     44720        recurrence-events        1     -1.6916       254.2          0.00        0.9947                       0.184
+irradiat      no           recurrence-events        1      0.0511      0.3396          0.02        0.8805                       1.052
+menopause     ge40         recurrence-events        1      3.6824      0.4350         71.68        <.0001                      39.742
+menopause     lt40         recurrence-events        1     -8.0331           .           .           .                   .       0.000
+node_caps     ?            recurrence-events        1     -9.6161           .           .           .                   .       0.000
+node_caps     no           recurrence-events        1      4.8963      0.4194        136.29        <.0001                     133.797
+tumor_size    0-4          recurrence-events        1    -10.0604       693.9          0.00        0.9884                       0.000
+tumor_size    15-19        recurrence-events        1      4.6394       192.5          0.00        0.9808                     103.480
+tumor_size    20-24        recurrence-events        1      5.0713       192.5          0.00        0.9790                     159.377
+tumor_size    25-29        recurrence-events        1      5.0689       192.5          0.00        0.9790                     158.994
+tumor_size    30-34        recurrence-events        1      5.0764       192.5          0.00        0.9790                     160.197
+tumor_size    35-39        recurrence-events        1      3.6687       192.5          0.00        0.9848                      39.199
+tumor_size    40-44        recurrence-events        1      5.2509       192.5          0.00        0.9782                     190.747
+tumor_size    44690        recurrence-events        1     -8.2510      1257.4          0.00        0.9948                       0.000
+tumor_size    44848        recurrence-events        1     -7.9699       415.1          0.00        0.9847                       0.000
+tumor_size    45-49        recurrence-events        1     -8.9929      1257.4          0.00        0.9943                       0.000
+
+
+                          Odds Ratio Estimates
+                                    
+                                                                   Point
+Effect                                  class                   Estimate
+
+REP_deg_malig                           recurrence-events          2.100
+age           30-39 vs 70-79            recurrence-events        999.000
+age           40-49 vs 70-79            recurrence-events        999.000
+age           50-59 vs 70-79            recurrence-events        999.000
+age           60-69 vs 70-79            recurrence-events        999.000
+breast        left vs right             recurrence-events          0.330
+breast_quad   ? vs right_up             recurrence-events        999.000
+breast_quad   central vs right_up       recurrence-events         12.716
+breast_quad   left_low vs right_up      recurrence-events          2.771
+breast_quad   left_up vs right_up       recurrence-events          1.329
+breast_quad   right_low vs right_up     recurrence-events          6.455
+inv_nodes     0-2 vs 44815              recurrence-events          0.098
+inv_nodes     15-17 vs 44815            recurrence-events          0.780
+inv_nodes     24-26 vs 44815            recurrence-events        999.000
+inv_nodes     44625 vs 44815            recurrence-events          0.452
+inv_nodes     44720 vs 44815            recurrence-events          0.919
+irradiat      no vs yes                 recurrence-events          1.108
+menopause     ge40 vs premeno           recurrence-events          0.513
+menopause     lt40 vs premeno           recurrence-events         <0.001
+node_caps     ? vs yes                  recurrence-events         <0.001
+node_caps     no vs yes                 recurrence-events          1.193
+tumor_size    0-4 vs 50-54              recurrence-events         <0.001
+tumor_size    15-19 vs 50-54            recurrence-events          0.156
+tumor_size    20-24 vs 50-54            recurrence-events          0.240
+tumor_size    25-29 vs 50-54            recurrence-events          0.239
+tumor_size    30-34 vs 50-54            recurrence-events          0.241
+tumor_size    35-39 vs 50-54            recurrence-events          0.059
+tumor_size    40-44 vs 50-54            recurrence-events          0.287
+tumor_size    44690 vs 50-54            recurrence-events         <0.001
+tumor_size    44848 vs 50-54            recurrence-events         <0.001
+tumor_size    45-49 vs 50-54            recurrence-events         <0.001

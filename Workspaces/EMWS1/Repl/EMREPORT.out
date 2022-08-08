@@ -1,0 +1,9 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Replacement Counts
+
+Obs    Variable       Label      Role     Train    Validation    Test
+
+ 1     deg_malig    deg-malig    INPUT      0           0          0 

@@ -1,0 +1,88 @@
+*------------------------------------------------------------*
+User:                Nikee
+Date:                August 07, 2022
+Time:                17:56:15
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+INPUT      INTERVAL          1
+INPUT      NOMINAL           8
+TARGET     NOMINAL           1
+ 
+ 
+ 
+ 
+ 
+The CONTENTS Procedure
+ 
+Data Set Name        EMWS1.FIMPORT_DATA            Observations          286
+Member Type          DATA                          Variables             10
+Engine               V9                            Indexes               0
+Created              08/07/2022 17:56:12           Observation Length    72
+Last Modified        08/07/2022 17:56:12           Deleted Observations  0
+Protection                                         Compressed            NO
+Data Set Type                                      Sorted                NO
+Label
+Data Representation  WINDOWS_64
+Encoding             wlatin1  Western (Windows)
+ 
+ 
+                       Engine/Host Dependent Information
+ 
+Data Set Page Size          65536
+Number of Data Set Pages    1
+First Data Page             1
+Max Obs per Page            908
+Obs in First Data Page      286
+Number of Data Set Repairs  0
+ExtendObsCounter            YES
+Filename                    D:\\BAN210PA\Workspaces\EMWS1\fimport_data.sas7bdat
+Release Created             9.0401M3
+Host Created                X64_8HOME
+ 
+ 
+            Alphabetic List of Variables and Attributes
+ 
+ #    Variable       Type    Len    Format    Informat    Label
+ 
+ 2    age            Char      5    $5.       $5.         age
+ 5    breast         Char      5    $5.       $5.         breast
+10    breast_quad    Char      9
+ 1    class          Char     20    $20.      $20.        class
+ 9    deg_malig      Num       8
+ 4    inv_nodes      Char      5    $5.       $5.         inv_nodes
+ 6    irradiat       Char      3    $3.       $3.         irradiat
+ 3    menopause      Char      7    $7.       $7.         menopause
+ 8    node_caps      Char      3
+ 7    tumor_size     Char      5
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Exported Attributes for TRAIN Port
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+INPUT      INTERVAL          1
+INPUT      NOMINAL           8
+TARGET     NOMINAL           1

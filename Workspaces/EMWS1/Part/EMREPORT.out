@@ -1,0 +1,40 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Summary Statistics for Class Targets
+
+Data=DATA
+
+            Numeric                            Frequency
+Variable     Value       Formatted Value         Count      Percent    Label
+
+ class         .       no-recurrence-events       201       70.2797    class
+ class         .       recurrence-events           85       29.7203    class
+
+
+Data=TEST
+
+            Numeric                            Frequency
+Variable     Value       Formatted Value         Count      Percent    Label
+
+ class         .       no-recurrence-events        62       70.4545    class
+ class         .       recurrence-events           26       29.5455    class
+
+
+Data=TRAIN
+
+            Numeric                            Frequency
+Variable     Value       Formatted Value         Count      Percent    Label
+
+ class         .       no-recurrence-events        80       70.7965    class
+ class         .       recurrence-events           33       29.2035    class
+
+
+Data=VALIDATE
+
+            Numeric                            Frequency
+Variable     Value       Formatted Value         Count      Percent    Label
+
+ class         .       no-recurrence-events        59       69.4118    class
+ class         .       recurrence-events           26       30.5882    class
